@@ -13,7 +13,7 @@ const eventShcema = new mongoose.Schema({
   tags: [String],
   city: String,
   price: String,
-  speakers: [String],
+  speakers: [Object],
 });
 
 const Event = mongoose.model("Event", eventShcema);
